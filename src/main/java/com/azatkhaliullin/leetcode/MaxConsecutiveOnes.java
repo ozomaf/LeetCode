@@ -1,5 +1,8 @@
-package com.azatkhaliullin.leetcode.TasksFromArrays101ExploreCard;
+package com.azatkhaliullin.leetcode;
 
+/**
+ * 485
+ */
 public class MaxConsecutiveOnes {
     public static void main(String[] args) {
         Solution solution = new Solution();
