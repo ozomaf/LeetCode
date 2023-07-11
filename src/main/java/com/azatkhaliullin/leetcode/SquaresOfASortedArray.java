@@ -1,7 +1,10 @@
-package com.azatkhaliullin.leetcode.TasksFromArrays101ExploreCard;
+package com.azatkhaliullin.leetcode;
 
 import java.util.Arrays;
 
+/**
+ * 977
+ */
 public class SquaresOfASortedArray {
     public static void main(String[] args) {
         Solution solution = new Solution();
