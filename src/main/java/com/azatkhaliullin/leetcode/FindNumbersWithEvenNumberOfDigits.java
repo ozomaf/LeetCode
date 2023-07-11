@@ -1,5 +1,8 @@
-package com.azatkhaliullin.leetcode.TasksFromArrays101ExploreCard;
+package com.azatkhaliullin.leetcode;
 
+/**
+ * 1295
+ */
 public class FindNumbersWithEvenNumberOfDigits {
     public static void main(String[] args) {
         Solution solution = new Solution();
