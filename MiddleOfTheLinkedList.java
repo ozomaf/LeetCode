@@ -1,5 +1,3 @@
-package com.azatkhaliullin;
-
 /**
  * 876
  */

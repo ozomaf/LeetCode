@@ -1,5 +1,3 @@
-package com.azatkhaliullin;
-
 import java.util.ArrayList;
 import java.util.List;
 
