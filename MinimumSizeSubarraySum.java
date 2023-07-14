@@ -11,16 +11,21 @@ public class MinimumSizeSubarraySum {
 
     static class Solution {
         public int minSubArrayLen(int target, int[] nums) {
-            int minLength = 0;
-            int currentSum = 0;
+            int minLength = Integer.MAX_VALUE;
+            int windowSum = 0;
+            int left = 0;
+
             for (int i = 0; i < nums.length; i++) {
-                currentSum += nums[i];
-                if (currentSum >= target) {
-                    minLength = Math.abs(i - nums.length) + 1;
-                    currentSum = 0;
+                windowSum += nums[i];
+
+                while (windowSum >= target) {
+                    minLength = Math.min(minLength, i - left + 1);
+                    windowSum -= nums[left];
+                    left++;
                 }
             }
-            return minLength;
+
+            return (minLength != Integer.MAX_VALUE) ? minLength : 0;
         }
     }
 
