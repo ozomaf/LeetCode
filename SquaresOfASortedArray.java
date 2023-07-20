@@ -7,15 +7,17 @@ public class SquaresOfASortedArray {
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] nums = {-4, -1, 0, 3, 10};
-        System.out.println(Arrays.toString(solution.sortedSquares(nums)));
+        int[] result = solution.sortedSquares(nums);
+        System.out.println(Arrays.toString(result));
     }
 
     static class Solution {
         public int[] sortedSquares(int[] nums) {
             for (int i = 0; i < nums.length; i++) {
-                nums[i] = (int) Math.pow(nums[i], 2);
+                nums[i] = nums[i] * nums[i];
             }
-            return Arrays.stream(nums).sorted().toArray();
+            Arrays.sort(nums);
+            return nums;
         }
     }
 
